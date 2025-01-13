@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trail Service</h1>
+    <div id="crud">
+        <h3>Tables</h3>
+        <label for="tableSelect">Select Table:</label>
+        <select id="tableSelect" onchange="updateInputFieldsAndLoadRecords()">
+            <option value="trail">Trail</option>
+            <option value="points">Points</option>
+        </select>
+        <button onclick="getAllRecords()">Refresh</button>
+        <div id="records"></div>
+        <h3>Create Record</h3>
+        <div id="createInputs"></div>
+        <button onclick="createRecord()">Create</button>
+        <h3>Update Record</h3>
+        <div id="updateInputs"></div>
+        <button onclick="updateRecord()">Update</button>
+        <h3>Delete Record</h3>
+        <div id="deleteInputs"></div>
+        <button onclick="deleteRecord()">Delete</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
