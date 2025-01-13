@@ -42,7 +42,7 @@ This repository contains the Trail Service API, a FastAPI-based application for 
 
 ## API Endpoints
 
-- `GET /api/{table}`: Retrieve all records from the specified table ([trail](http://_vscodecontentref_/11) or `points`).
+- `GET /api/{table}`: Retrieve all records from the specified table (`trail` or `points`).
 - `GET /api/trail/{trail_id}`: Retrieve a specific trail by its ID.
 - `POST /api/{table}`: Create a new record in the specified table.
 - `PUT /api/{table}/{record_id}`: Update a record in the specified table.
